@@ -1,0 +1,42 @@
+{{! Previous/next page links - only displayed on page 2+ }}
+<div class="extra-pagination inner">
+    {{pagination}}
+</div>
+
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="{{post_class}}">
+    <header class="post-header landing-post-header margin-bottom-30">
+        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+        <time class="post-date post-meta" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+    </header>
+    <section class="post-excerpt">
+        {{!-- <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p> --}}
+        {{content}}
+    </section>
+    <footer class="post-meta">
+        {{!-- {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
+        {{author}}
+        {{tags prefix=" on "}}
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> --}}
+        <section class="landing-share">
+            <p class="margin-bottom-0">Share this post</p>
+
+            <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <span class="hidden">Twitter</span>
+            </a>
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <span class="hidden">Facebook</span>
+            </a>
+            <a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-shape="round"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_16.png" /></a>
+            <!-- Please call pinit.js only once per page -->
+            <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+        </section>
+    </footer>
+</article>
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

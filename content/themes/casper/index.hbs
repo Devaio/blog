@@ -1,0 +1,283 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The big featured header }}
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+            {{!-- <span style="color: #6C6; font-size: 135px;">⬢</span> --}}
+           
+
+
+            <div class="hex-nav">
+                <div class="hex-row">
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hex-row hex-row-2">
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:url(/content/images/2015/03/nav-about.jpg) 50% 50% no-repeat;background-size:cover;">
+                                    <div class="hex-text-wrap">
+                                        <div class="hex-text"><a class="black-link" href="/about">About</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div class="hex-row hex-row-3">
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:url(/content/images/2015/03/nav-travel.jpg) 90% 50% no-repeat;background-size:cover;">
+                                    <div class="hex-text-wrap">
+                                        <div class="hex-text"><a class="black-link" href="/tag/travel/">Travel</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:url(/content/images/2015/03/nav-food.jpg) 50% 50% no-repeat;background-size:cover;">
+                                    <div class="hex-text-wrap">
+                                        <div class="hex-text"><a class="black-link" href="/tag/cooking/">Cooking</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:url(/content/images/2015/03/nav-diy.jpg) 50% 50% no-repeat;background-size:cover;">
+                                    <div class="hex-text-wrap">
+                                        <div class="hex-text"><a class="black-link" href="/tag/diy/">DIY</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hex-row hex-row-4">
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:url(/content/images/2015/03/nav-subscribe.jpg) 50% 50% no-repeat;background-size:cover;">
+                                    <div class="hex-text-wrap">
+                                        <div class="hex-text"><a class="black-link" href="/about">Subscribe</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:url(/content/images/2015/03/nav-art.jpg) 50% 50% no-repeat;background-size:cover;">
+                                    <div class="hex-text-wrap">
+                                        <div class="hex-text"><a class="black-link" href="/tag/art/">Art</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:url(/content/images/2015/03/nav-style.jpg) 50% 50% no-repeat;background-size:cover;">
+                                    <div class="hex-text-wrap">
+                                        <div class="hex-text"><a class="black-link" href="/tag/style/">Style</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:url(/content/images/2015/03/nav-colorado.jpg) 50% 50% no-repeat;background-size:cover;">
+                                    <div class="hex-text-wrap">
+                                        <div class="hex-text"><a class="black-link" href="/tag/colorado/">Colorado</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hex-row hex-row-5">
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hex-row hex-row-6">
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-container">
+                        <div class="hex">
+                            <div class="hex-outer">
+                                <div class="hex-inner" style="background:rgba(120,120,120,0.4);">
+                                    {{!-- <div class="hex-text-wrap"> --}}
+                                        {{!-- <div class="hex-text">Cooking</div> --}}
+                                    {{!-- </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        {{/if}}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{@blog.title}}</h1>
+            <h2 class="page-description">{{@blog.description}}</h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+{{! The main content area on the homepage }}
+<main id="content" class="content" role="main">
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</main>
