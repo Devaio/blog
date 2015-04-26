@@ -861,7 +861,7 @@ body.nav-opened .nav {
 .hex-nav{
     position: absolute;
     left:0px;
-    top:-30px;
+    top:-20px;
 }
 
 .menu-button {
@@ -964,7 +964,7 @@ body.nav-opened .menu-button .word {
 }
 
 .no-cover.main-header {
-    height:40vh!important;    
+    height:360px!important;    
     /*max-height: 40%;*/
     background: #f5f8fa;
 }
